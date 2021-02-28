@@ -2,12 +2,10 @@ import * as React from 'react'
 import styled from '@emotion/styled'
 import { transparentize } from 'polished'
 import { Link } from 'gatsby'
-import Logo from "../components/logo";
 
 import { heights, dimensions, colors } from '../styles/variables'
 import Container from './Container'
-// import Navbar from "./Navbar";
-
+import Navbar from './Navbar'
 
 
 const StyledHeader = styled.header`
@@ -41,11 +39,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ title }) => (
   <StyledHeader>
-    <HeaderInner>
-
-      <HomepageLink to="/">{title} </HomepageLink>
-        <Logo />
-    </HeaderInner>
+    <Navbar />
   </StyledHeader>
 )
 

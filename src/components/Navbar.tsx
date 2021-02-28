@@ -3,12 +3,13 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import NavbarLinks from './NavbarLinks'
-import LogoTsx from './LogoTsx'
+import Logo from './logo'
+import { heights, dimensions, colors } from '../styles/variables'
 
 const Navigation = styled.nav`
   height: 10vh;
   display: flex;
-  background-color: #fff;
+  background-color: ${colors.brand};
   position: relative;
   justify-content: space-between;
   text-transform: uppercase;
@@ -93,7 +94,7 @@ const Navbar = () => {
 
   return (
     <Navigation>
-      <LogoTsx />
+      <Logo />
       <Toggle navbarOpen={navbarOpen} onClick={() => setNavbarOpen(!navbarOpen)}>
         {navbarOpen ? <Hamburger open /> : <Hamburger />}
       </Toggle>
