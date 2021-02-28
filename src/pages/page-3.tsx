@@ -5,18 +5,18 @@ import Page from '../components/Page'
 import Container from '../components/Container'
 import IndexLayout from '../layouts'
 
-const PageTwo = () => (
+const PageThree = () => (
   <IndexLayout>
     <Page>
       <Container>
-        <h1>Hi from the second page</h1>
-        <p>Welcome to page 2</p>
+        <h1>Hi from the third page</h1>
+        <p>Welcome to page 3</p>
         <ul>
           <li>
             <Link to="/a-markdown-page/">Show me some Markdown!</Link>
           </li>
           <li>
-            <Link to="/">Take me back home.</Link>
+            <Link to="/page-2">Take me to page 2.</Link>
           </li>
         </ul>
       </Container>
@@ -24,4 +24,4 @@ const PageTwo = () => (
   </IndexLayout>
 )
 
-export default PageTwo
+export default PageThree
